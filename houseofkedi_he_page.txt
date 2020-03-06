@@ -1,0 +1,63 @@
+<title> Gallery </title>
+<link rel="stylesheet" type="text/css" href="gallery.css">
+<html>
+<head>
+<style>
+div.gallery:hover
+{
+border:5px solid red;
+transform:scale(2,2);
+}
+div.gallery
+{
+margin:5px;
+border: 5px dashed ;
+float:left;
+transition-duration:1s;
+}
+
+div.desc
+{
+padding:15px;
+text-align: bottom;
+}
+</head>
+</style>
+
+<body>
+<img src= "college.jpg" alt= "backup" width=100 height=100>
+<div class=abc> <h1> MPSTME </h1></div>
+<div class=abc> <h1>Gallery </h1></div>
+<br>
+<br>
+<br>
+<br>
+<div class= "gallery">
+<a href= "img1.jpeg">
+<img src="img1.jpeg"  alt="preview" width=200 height=200  >  </a>
+<div class="desc"> Interior</div>
+</div>
+<div class= "gallery">
+<a href= "img2.jpeg">
+<img src="img2.jpeg"  alt="preview" width=200 height=200  >  </a>
+<div class="desc"> Canteen </div>
+</div>
+<div class= "gallery">
+<a href= "img3.jpeg">
+<img src="img3.jpeg"  alt="preview" width=200 height=200  >  </a>
+<div class="desc"> Library </div>
+</div>
+<div class= "gallery">
+<a href= "img4.jpeg">
+<img src="img4.jpeg"  alt="preview" width=200 height=200  >  </a>
+<div class="desc"> Classroom </div>
+</div>
+<div class= "gallery">
+<a href= "nmims1.jpg">
+<img src="nmims1.jpg"  alt="preview" width=200 height=200  >  </a>
+<div class="desc"> College building </div>
+</div>
+
+
+</body>
+</html>

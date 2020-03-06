@@ -1,0 +1,140 @@
+<html>
+<head>
+<title> Home </title>
+<link rel="stylesheet" type="text/css" href="ext.css">
+<style>
+
+div.cat
+{
+width:226px;
+height:auto;
+z-index:999;
+backgound-color:yellow;
+}
+
+</style>
+
+<script>
+
+function Svalidate()
+{
+
+var size;
+var sizeone;
+var sizetwo;
+size=(document.form.society.value).length;
+sizeone=(document.form.lnd.value).length;
+sizetwo=(document.form.pin.value).length;
+
+
+if((size<7) || (size>10))
+{
+alert("Society name must contain characters more than 7 and less than 10.");
+document.form.society.focus();
+return false;
+}
+
+
+
+
+
+if((sizeone<7) || (sizeone>12))
+{
+alert("Landmark must contain characters more than 7 and less than 12.");
+document.form.lnd.focus();
+return false;
+}
+
+
+
+
+if(isNaN(document.form.pin.value)==true)
+{
+alert("PIN must contain only numbers");
+document.form.pin.focus();
+return false;
+}
+
+
+if(sizetwo!=6)
+{
+alert("Ivalid PIN.");
+document.form.pin.focus();
+return false;
+}
+
+
+if(atpos<5 || (dotpos-atpos<4))
+{
+alert("Invalid email");
+document.form.email.focus();
+return false;
+}
+
+
+
+
+}
+
+div.form
+{
+}
+
+</script>
+
+<body>
+
+<div class="two">
+<div class="head">
+<img src="houseofkedi.jpg" height="70px" width="70px">
+<ul class="one">
+<li><h1>HOUSE OF KEDI</h1></li>
+<div class="nav">
+<li ><a href="Login.html">Login</a></li>
+<li><a href="Help.html">Help</a></li>
+<li><a href="Contact.html">Contact</a></li>
+<li><a href="about.html">About us</a></li>
+<li><a href="Homepage.html">Home</a></li>
+</div>
+</ul>
+</div>
+</div>
+<br><br><br><br><br><br>
+
+<center>
+
+<div class="hello">
+
+<h2>DETAILS:-</h2>
+<br>
+
+<form name="form" method="post" onsubmit="return Svalidate()"  action="insertIntoDelivery.php">
+<table>
+<tr>
+<td >Name of society:</td><td><input type="text" name="society" size="75px" required></td>
+</tr><tr>
+<td>Landmark:</td><td><input type="text" name="lnd" size="75px" required></td>
+</tr><tr>
+<td>Pincode:</td><td><input type="text" name="pin"size="75px" required></td>
+</tr><tr>
+<td>Address:</td><td><input type="text" name="add"  size="75px" required></td>
+</tr><tr>
+<td></td><td align="right"><input type="submit" value="Submit"></td>
+</tr>
+</table>
+</form>
+
+</div>
+
+
+</center>
+
+
+
+
+
+
+</body>
+</head>
+
+</html>
